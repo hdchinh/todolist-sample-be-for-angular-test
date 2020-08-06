@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+1.upto(10) do |n|
+  Item.create(
+    title: "Item #{n}",
+    completed: false,
+    archive: false
+  )
+end
